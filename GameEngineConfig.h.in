@@ -1,0 +1,9 @@
+//
+// Created by user on 8/21/2025.
+//
+
+#ifndef GAMEENGINE_GAMEENGINECONFIG_H
+    #define GAMEENGINE_GAMEENGINECONFIG_H
+    #define GameEngine_VERSION_MAJOR @GameEngine_VERSION_MAJOR@
+    #define GameEngine_VERSION_MINOR @GameEngine_VERSION_MINOR@
+#endif //GAMEENGINE_GAMEENGINECONFIG_H
