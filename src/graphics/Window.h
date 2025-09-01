@@ -4,8 +4,8 @@
 
 
 struct GLFWwindow;
-
-namespace Engine { namespace Graphics{
+namespace Engine::Graphics{
+        void windowResize(GLFWwindow* window, int width, int height);
         class Window
         {
         private:
@@ -16,11 +16,14 @@ namespace Engine { namespace Graphics{
         public:
             Window(const char* title, int width, int height);
             ~Window();
-            void update() const;
-            bool closed() const;
+            void update();
+            [[nodiscard]] bool closed() const;
+            void clear() const;
+            [[nodiscard]] inline int getWidth() const { return m_width; }
+            [[nodiscard]] inline int getHeight() const { return m_height; }
         private:
             bool init();
         };
     }
-}
+
 #endif //GAMEENGINE_WINDOW_H
