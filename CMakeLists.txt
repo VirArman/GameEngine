@@ -11,7 +11,7 @@ add_executable(
         GameEngine
         src/main.cpp
         src/graphics/Window.cpp
-        src/gl.c )
+        ${GLAD_INCLUDE_PATH}/glad/gl.c)
 
 add_subdirectory(${GLFW_PATH})
 
